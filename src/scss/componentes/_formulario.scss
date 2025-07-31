@@ -15,6 +15,7 @@
     }
     input{
         flex: 1;
+        min-width: 0;  // permitir que el input se encoja dentro del flex container
         border: none;
         padding: 1.25rem;
         border-radius: 1rem;

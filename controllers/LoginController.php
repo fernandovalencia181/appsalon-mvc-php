@@ -15,6 +15,7 @@ class LoginController{
             $alertas=$auth->validarLogin();
             if(empty($alertas)){
                 // Comprobar que exista el usuario
+                /** @var \Model\Usuario|null $usuario */
                 $usuario=Usuario::where("email",$auth->email);
                 if($usuario){
                     //Verificar el password
